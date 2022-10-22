@@ -28,6 +28,16 @@ These are the result for the incipient fault detection in two datasets.
 ![evaluate1](/figures/IFPD.png)  
 ![evaluate2](/figures/SGAH.eps)  
 
+# Reference
+      @unknown{unknown,
+               author = {Li, Qiyue and Deng, Yuxing and Liu, Xin and Sun, Wei and Li, Weitao and Li, Jie and Liu, Zhi},
+               year = {2022},
+               month = {05},
+               pages = {},
+               title = {Autonomous Smart Grid Fault Detection},
+               doi = {10.48550/arXiv.2206.14150}
+               }
+
 
 
 
