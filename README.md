@@ -15,9 +15,14 @@ Datasets are obtained from a small Incipient Fault dataset in Power Distribution
 
    device: Tesla V100   
    dataset: IFPD and SGAH   
-   optimizer: Adam()
+   optimizer: Adam(lr=0.001, eps=1e-08,)
 
 
+These are the result for the  incipient fault detection.
+
+| Metrics | Accuracy | Precision | Recall | F1score |
+| ------- |:---:| :--:| :--: | :--: |
+| AD-TFM-AT | 7.16 | 94.20 | 9.71 | 21.25% |
 
 
 
