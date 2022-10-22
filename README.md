@@ -18,12 +18,12 @@ Datasets are obtained from a small Incipient Fault dataset in Power Distribution
    optimizer: Adam(lr=0.001, eps=1e-08,)
 
 
-These are the result for the  incipient fault detection.
+These are the result for the incipient fault detection in two datasets.
 
 | Metrics | Accuracy | Precision | Recall | F1score |
 | ------- |:---:| :--:| :--: | :--: |
-| AD-TFM-AT | 7.16 | 94.20 | 9.71 | 21.25% |
-
+| IFPD | 0.97 | 0.97 | 0.96 | 0.96 |
+| SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
 
 
 
