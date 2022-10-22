@@ -7,8 +7,9 @@ Detection of incipient faults in power distribution network (LSTM/Adaptive Wavel
 # Train the model  
 Run command below to train the model:  
 
-`<python test_tf.py `  
+`<python test_tf.py> `  
 
+# Experiment  
 
 
 
