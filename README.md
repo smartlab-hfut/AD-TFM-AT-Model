@@ -25,7 +25,8 @@ These are the result for the incipient fault detection in two datasets.
 | IFPD | 0.97 | 0.97 | 0.96 | 0.96 |
 | SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
 
-[evaluate](/images/IFPD.eps)
+![evaluate1](/figures/IFPD.png)
+![evaluate2](/figures/SGAH.eps)
 
 
 
