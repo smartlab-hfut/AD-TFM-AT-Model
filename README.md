@@ -6,7 +6,8 @@ Detection of incipient faults in power distribution network (LSTM/Adaptive Wavel
 * Keras 2.25  
 # Train the model  
 Run command below to train the model:  
-'<python test_tf.py --model model_name>'
+
+`<hello world>`
 
 
 
