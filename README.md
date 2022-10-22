@@ -37,6 +37,9 @@ These are the result for the incipient fault detection in two datasets.
                title = {Autonomous Smart Grid Fault Detection},
                doi = {10.48550/arXiv.2206.14150}
                }
+               
+# Copyright  
+See [LICENSE](LICENSE) for details.
 
 
 
