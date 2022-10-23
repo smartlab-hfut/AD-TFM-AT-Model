@@ -25,7 +25,7 @@ These are the result for the incipient fault detection in two datasets.
 | IFPD | 0.97 | 0.97 | 0.96 | 0.96 |
 | SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
 
-![evaluate1](/figures/IFPD.png)  
+![evaluate1](/figures/IFPD.png, width="100px")  
 Fig.1 ROC of AD-TFM-AT model on IFPD.  
 ![evaluate2](/figures/SGAH.png)  
 Fig.2 ROC of AD-TFM-AT model on SGAH.
