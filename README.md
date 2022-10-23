@@ -26,7 +26,7 @@ These are the result for the incipient fault detection in two datasets.
 | SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
 
 ![evaluate1](/figures/IFPD.png)  
-![evaluate2](/figures/SGAH.eps)  
+![evaluate2](/figures/SGAH.png)  
 
 # Reference
       @unknown{unknown,
