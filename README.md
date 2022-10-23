@@ -15,7 +15,8 @@ Datasets are obtained from a small Incipient Fault dataset in Power Distribution
 
    device: Tesla V100   
    dataset: IFPD and SGAH   
-   optimizer: Adam(lr=0.001, eps=1e-08,)
+   optimizer: Adam(lr=0.001, eps=1e-08)  
+   batch：800 
 
 
 These are the result for the incipient fault detection in two datasets.
@@ -26,8 +27,9 @@ These are the result for the incipient fault detection in two datasets.
 | SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
 
 ![evaluate1](/figures/IFPD.png)  
-Fig.1 ROC of AD-TFM-AT model on IFPD.  
 <evaluate1 src="[/figures/IFPD.png](https://github.com/smartlab-hfut/AD-TFM-AT-Model/blob/main/figures/IFPD.png)" width="100px">
+Fig.1 ROC of AD-TFM-AT model on IFPD.  
+
 ![evaluate2](/figures/SGAH.png)  
 Fig.2 ROC of AD-TFM-AT model on SGAH.
 
