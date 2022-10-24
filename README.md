@@ -41,8 +41,8 @@ if you use the codes or the datasets, please cite the following papers:
                pages = {},  
                title = {Autonomous Smart Grid Fault Detection},  
                doi = {10.48550/arXiv.2206.14150}  
-               }    
-       @article{li2022resource,  
+               }  ```   
+       ```@article{li2022resource,  
                  title={Resource Orchestration of Cloud-edge based Smart Grid Fault Detection},  
                  author={Li, Jie and Deng, Yuxing and Sun, Wei and Li, Weitao and Li, Ruidong and Li, Qiyue and Liu, Zhi},  
                  journal={ACM Transactions on Sensor Networks (TOSN)},  
