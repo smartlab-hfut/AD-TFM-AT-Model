@@ -34,7 +34,7 @@ Fig.2 ROC of AD-TFM-AT model on SGAH.
 
 ## Reference
 If you use the codes or the datasets, please cite the following papers:   
-     ''' @unknown{unknown,        
+    ```@unknown{unknown,        
                author = {Li, Qiyue and Deng, Yuxing and Liu, Xin and Sun, Wei and Li, Weitao and Li, Jie and Liu, Zhi},    
                year = {2022},      
                month = {05},     
@@ -48,7 +48,7 @@ If you use the codes or the datasets, please cite the following papers:
                journal={ACM Transactions on Sensor Networks (TOSN)},   
                year={2022},   
                publisher={ACM New York, NY}   
-               }'''
+               }```
                
 ## Copyright  
 See [LICENSE](LICENSE) for details.
