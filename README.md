@@ -12,12 +12,12 @@ Run command below to train and test the model:
 ## Experiment  
 Datasets are obtained from a small Incipient Fault dataset in Power Distribution (IFPD) system from [1] (https://dx.doi.org/10.21227/bwjy-7e05), and a relatively large dataset logged by State Grid Corporation of China in AnHui Province (SGAH) from [2] (https://github.com/smartlab-hfut/SGAH-datasets.git).  
 
-
+```
    device: Tesla V100   
    dataset: IFPD and SGAH   
    optimizer: Adam(lr=0.001, eps=1e-08)  
    batch：800 
-
+```
 
 These are the result for the incipient fault detection in two datasets.
 
