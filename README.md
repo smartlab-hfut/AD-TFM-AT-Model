@@ -33,7 +33,7 @@ Fig.1 ROC of AD-TFM-AT model on IFPD.
 Fig.2 ROC of AD-TFM-AT model on SGAH.
 
 ## Reference
-if you use the codes or the datasets, please cite the following papers:   
+If you use the codes or the datasets, please cite the following papers:   
       @unknown{unknown,        
                author = {Li, Qiyue and Deng, Yuxing and Liu, Xin and Sun, Wei and Li, Weitao and Li, Jie and Liu, Zhi},    
                year = {2022},      
