@@ -7,7 +7,9 @@ Detection of incipient faults in power distribution network (LSTM/Adaptive Wavel
 ## Train and test the model  
 Run command below to train and test the model:  
 
-```python test_tf.py```  
+```  
+python test_tf.py  
+```  
 
 ## Experiment  
 Datasets are obtained from a small Incipient Fault dataset in Power Distribution (IFPD) system from [1] (https://dx.doi.org/10.21227/bwjy-7e05), and a relatively large dataset logged by State Grid Corporation of China in AnHui Province (SGAH) from [2] (https://github.com/smartlab-hfut/SGAH-datasets.git).  
