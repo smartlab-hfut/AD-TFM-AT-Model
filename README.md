@@ -1,101 +1,175 @@
-# AD-TFM-AT-Model  
-Detection of incipient faults in power distribution network (LSTM/Adaptive Wavelet trasnform/Attention).
-## Requirement  
-* Python 3.6  
-* Tensorflow-gpu 1.14.0  
-* Keras 2.25  
-## Train and test the model  
-Run command below to train and test the model:  
+# ⚡ Incipient Fault Detection in Power Distribution System: A Time–Frequency Embedded Deep-Learning Based Approach
+A deep-learning framework for detecting incipient faults in power distribution systems, combining  
+**LSTM**, **Adaptive Wavelet Transform**, and **Attention Mechanisms**.
+*IEEE Transactions on Instrumentation and Measurement (TIM), 2023.*
 
-```  
-python test_tf.py  
-```  
+---
 
-## Experiment  
-Datasets are obtained from a small Incipient Fault dataset in Power Distribution (IFPD) system from [1] (https://dx.doi.org/10.21227/bwjy-7e05), and a relatively large dataset logged by State Grid Corporation of China in AnHui Province (SGAH) from [2] (https://github.com/smartlab-hfut/SGAH-datasets.git).  
+## ⭐ Overview
+
+AD-TFM-AT is designed for early-stage (incipient) fault detection in distribution networks,  
+where fault signatures are typically  **nonstationary**, and **short-duration**.
+
+The model integrates:
+
+- 🔵 **Adaptive Wavelet Transform (AWT)** – extracts multi-resolution transient features  
+- 🟢 **LSTM modules** – model temporal dependencies  
+- 🟠 **Attention layers** – enhance relevant fault patterns  
+- ⚡ Full end-to-end training in TensorFlow-GPU  
+
+This hybrid framework achieves high accuracy on both **IFPD** and **SGAH** datasets.
+
+---
+
+## 🚀 Key Contributions (from the Paper)
+
+### ✔ 1. **Adaptive Wavelet + LSTM Hybrid Cell (AD-TFM)**  
+A novel LSTM cell embedding learnable wavelet transform to capture multi-scale fault features.
+
+### ✔ 2. **Attention-Enhanced AD-TFM-AT Network**  
+Attention improves the discrimination of weak or noisy incipient fault signatures.
+
+### ✔ 3. **Two Data Augmentation Strategies**  
+- **Phase Switching (PS)**  
+- **Temporal Sliding (TS)**  
+Effectively expands limited incipient fault datasets.
+
+---
+
+## 📐 Model Architecture
+
+### 🔹 Full AD-TFM-AT Network (Fig. 4)
+
+<p align="center">
+  <img src="figures/ad_tfm_at.png" width="75%">
+</p>
+
+### 🔹 AD-TFM Cell Structure (Fig. 3)
+
+<p align="center">
+  <img src="figures/ad_tfm_cell.png" width="65%">
+</p>
+
+### 🔹 Data Augmentation (Phase Switching + Temporal Sliding) (Fig. 5)
+
+<p align="center">
+  <img src="figures/data_augmentation.png" width="75%">
+</p>
+
+---
+
+## 🔧 Requirements
+
+The model is implemented under the following environment:
 
 ```
-   device: Tesla V100   
-   dataset: IFPD and SGAH   
-   optimizer: Adam(lr=0.001, eps=1e-08)  
-   batch：800 
+
+Python 3.6
+TensorFlow-GPU 1.14.0
+Keras 2.2.5
+
+````
+
+Install via:
+
+```bash
+pip install -r requirements.txt
+````
+
+---
+
+## 🚀 Train & Test
+
+Run the following command to train and evaluate the model:
+
+```bash
+python test_tf.py
 ```
 
-These are the result for the incipient fault detection in two datasets.
+Modify hyperparameters directly inside the script for custom experiments.
 
-| Metrics | Accuracy | Precision | Recall | F1score |
-| ------- |:---:| :--:| :--: | :--: |
-| IFPD | 0.97 | 0.97 | 0.96 | 0.96 |
-| SGAH | 0.99 | 0.97 | 0.98 | 0.98 |
+---
 
-![evaluate1](/figures/IFPD.png)  
-Fig.1 ROC of AD-TFM-AT model on IFPD.  
+## 📡 Datasets
 
-![evaluate2](/figures/SGAH.png)  
-Fig.2 ROC of AD-TFM-AT model on SGAH.
+### **1️⃣ IFPD Dataset (Incipient Fault Dataset)**
 
-## Reference
-If you use the codes or the datasets, please cite the following papers:   
-   ```  
-   @unknown{unknown,  
-   author = {Li, Qiyue and Deng, Yuxing and Liu, Xin and Sun, Wei and Li, Weitao and Li, Jie and Liu, Zhi},  
-   year = {2022},  
-   month = {05},  
-   pages = {},  
-   title = {Autonomous Smart Grid Fault Detection},  
-   doi = {10.48550/arXiv.2206.14150}  
-   }  
-   
-   @article{li2022resource,  
-   title={Resource Orchestration of Cloud-edge based Smart Grid Fault Detection},  
-   author={Li, Jie and Deng, Yuxing and Sun, Wei and Li, Weitao and Li, Ruidong and Li, Qiyue and Liu, Zhi},  
-   journal={ACM Transactions on Sensor Networks (TOSN)},  
-   year={2022},  
-   publisher={ACM New York, NY}  
-   }
-   ```  
-   
-## Copyright  
-See [LICENSE](LICENSE) for details.
+Source:
+[https://dx.doi.org/10.21227/bwjy-7e05](https://dx.doi.org/10.21227/bwjy-7e05)
 
+### **2️⃣ SGAH Dataset (State Grid Anhui Province)**
 
+GitHub:
+[https://github.com/smartlab-hfut/SGAH-datasets.git](https://github.com/smartlab-hfut/SGAH-datasets.git)
 
+---
 
+## 🛠 Training Configuration (from Table I)
 
+| Parameter            | Value                      |
+| -------------------- | -------------------------- |
+| Optimizer            | Adam (lr=0.001, eps=1e-08) |
+| Batch Size           | 256 / 800                  |
+| Hidden Dim (D)       | 32                         |
+| Time Scales (K)      | 4                          |
+| Frequency Scales (J) | 4                          |
+| Wavelet ω₀           | 16                         |
 
+---
 
+## 📊 Experimental Results
 
+### 🔹 Detection Performance on IFPD & SGAH
 
+| Dataset  | Accuracy | Precision | Recall | F1-score |
+| -------- | :------: | :-------: | :----: | :------: |
+| **IFPD** |   0.97   |    0.97   |  0.96  |   0.96   |
+| **SGAH** |   0.99   |    0.97   |  0.98  |   0.98   |
 
+---
 
+### 🔹 ROC Curves
 
+#### **IFPD Dataset**
 
+<p align="center">
+  <img src="figures/IFPD.png" width="55%">
+</p>
 
+#### **SGAH Dataset**
 
+<p align="center">
+  <img src="figures/SGAH.png" width="55%">
+</p>
 
+---
 
+## 📚 References
 
+```bibtex
+@article{autonomous2022,
+  author={Li, Qiyue and Deng, Yuxing and Liu, Xin and Sun, Wei and Li, Weitao and Li, Jie and Liu, Zhi},
+  title={Autonomous Smart Grid Fault Detection},
+  journal={arXiv e-prints},
+  year={2022},
+  doi={10.48550/arXiv.2206.14150}
+}
 
+@article{li2022resource,
+  title={Resource Orchestration of Cloud-edge based Smart Grid Fault Detection},
+  author={Li, Jie and Deng, Yuxing and Sun, Wei and Li, Weitao and Li, Ruidong and Li, Qiyue and Liu, Zhi},
+  journal={ACM Transactions on Sensor Networks (TOSN)},
+  year={2022}
+}
+```
 
+---
 
+## 📬 Contact
 
+For questions or discussions:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **Huan Luo**, Hefei University of Technology
+  ✉️ [luohuan@mail.hfut.edu.cn](mailto:luohuan@mail.hfut.edu.cn)
 
 
