@@ -49,26 +49,27 @@ Attention improves the discrimination of weak or noisy incipient fault signature
 Effectively expands limited incipient fault datasets.
 
 ---
-
 ## 📐 Model Architecture
 
-### 🔹 Full AD-TFM-AT Network (Fig. 4)
+<table>
+<tr>
+  <!-- 左侧大图 -->
+  <td style="vertical-align: middle; padding-right: 15px;">
+    <img src="figures/ad_tfm_at.png" width="42%">
+  </td>
 
-<p align="center">
-  <img src="figures/ad_tfm_at.png" width="75%">
-</p>
+  <!-- 右侧两张图上下排列 -->
+  <td style="vertical-align: top;">
+    <img src="figures/ad_tfm_cell.png" width="350"><br><br>
+    <img src="figures/data_augmentation.png" width="350">
+  </td>
+</tr>
+</table>
 
-### 🔹 AD-TFM Cell Structure (Fig. 3)
 
-<p align="center">
-  <img src="figures/ad_tfm_cell.png" width="65%">
-</p>
 
-### 🔹 Data Augmentation (Phase Switching + Temporal Sliding) (Fig. 5)
 
-<p align="center">
-  <img src="figures/data_augmentation.png" width="75%">
-</p>
+
 
 ---
 
