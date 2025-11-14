@@ -51,25 +51,18 @@ Effectively expands limited incipient fault datasets.
 ---
 ## 📐 Model Architecture
 
-<table>
-<tr>
-  <!-- 左侧大图 -->
-  <td style="vertical-align: middle; padding-right: 15px;">
-    <img src="figures/ad_tfm_at.png" width="42%">
-  </td>
+### 🔹 Full AD-TFM-AT Network
 
-  <!-- 右侧两张图上下排列 -->
-  <td style="vertical-align: top;">
-    <img src="figures/ad_tfm_cell.png" width="350"><br><br>
-    <img src="figures/data_augmentation.png" width="350">
-  </td>
-</tr>
-</table>
+<p align="center">
+  <img src="figures/ad_tfm_at.png" width="55%">
+</p>
 
+### 🔹 AD-TFM Cell Structure And  Data Augmentation (Phase Switching + Temporal Sliding)
 
-
-
-
+<p align="center">
+  <img src="figures/ad_tfm_cell.png" width="40%" style="margin-right: 3%;">
+  <img src="figures/data_augmentation.png" width="40%">
+</p>
 
 ---
 
