@@ -1,7 +1,21 @@
-# ⚡ Incipient Fault Detection in Power Distribution System: A Time–Frequency Embedded Deep-Learning Based Approach
-A deep-learning framework for detecting incipient faults in power distribution systems, combining  
-**LSTM**, **Adaptive Wavelet Transform**, and **Attention Mechanisms**.
-*IEEE Transactions on Instrumentation and Measurement (TIM), 2023.*
+<h1 align="center">⚡ Incipient Fault Detection in Power Distribution System: A Time–Frequency Embedded Deep-Learning Based Approach</h1>
+
+<p align="center">
+  <i>Official implementation of the IEEE Transactions on Instrumentation and Measurement (TIM), 2023</i>
+</p>
+
+<p align="center">
+  <b>AD-TFM-AT Model: Adaptive Wavelet Transform × LSTM × Attention</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/TensorFlow-1.14-orange?style=flat-square&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Keras-2.2.5-red?style=flat-square&logo=keras&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.6-blue?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-Apache--2.0-green?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Status-Research%20Code-yellow?style=flat-square"/>
+</p>
+
 
 ---
 
