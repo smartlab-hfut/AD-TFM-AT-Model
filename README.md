@@ -144,19 +144,13 @@ GitHub:
 
 ### 🔹 ROC Curves
 
-#### **IFPD Dataset**
+#### **IFPD Dataset** and **SGAH Dataset**
 
 <p align="center">
-  <img src="figures/IFPD.png" width="55%">
+  <img src="figures/IFPD.png" width="42%" style="margin-right: 3%;">
+    <img src="figures/SGAH.png" width="42%">
 </p>
 
-#### **SGAH Dataset**
-
-<p align="center">
-  <img src="figures/SGAH.png" width="55%">
-</p>
-
----
 
 ## 📚 References
 
